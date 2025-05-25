@@ -49,8 +49,9 @@
 <body>
   <div id="ui">Lineworker 3D - Tutorial Mode</div>
   <div id="repairUI"></div>
-  <!-- ✅ Correct script order -->
+  <!-- Load Three.js first -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
-  <script src="game.js"></script>
+  <!-- Then load versioned game logic -->
+  <script src="game-v2.js"></script>
 </body>
 </html>

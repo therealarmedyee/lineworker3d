@@ -4,13 +4,31 @@
   <meta charset="UTF-8" />
   <title>Lineworker 3D</title>
   <style>
-    body { margin: 0; overflow: hidden; }
+    body { margin: 0; overflow: hidden; background: #000; }
     canvas { display: block; }
+    #repairUI {
+      position: absolute;
+      display: none;
+      top: 20%;
+      left: 30%;
+      width: 40%;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      padding: 20px;
+      font-family: sans-serif;
+      z-index: 10;
+      border: 2px solid #ffffff44;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
-  <!-- ✅ WORKING Three.js CDN -->
+  <div id="repairUI"></div>
+
+  <!-- ✅ Load Three.js first -->
   <script src="https://unpkg.com/three@0.148.0/build/three.min.js"></script>
+
+  <!-- ✅ Then load your full game logic -->
   <script src="game-v2.js"></script>
 </body>
 </html>
